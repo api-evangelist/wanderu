@@ -1,7 +1,25 @@
 aid: wanderu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wanderu.png
 name: Wanderu
-description: Wanderu is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Wanderu is a ground-travel metasearch and booking platform - a Kayak-style aggregator
+  that lets travelers search, compare, and book intercity bus and train tickets (plus flights and ferries)
+  across hundreds of carriers in North America and Europe, including Amtrak, Greyhound, FlixBus, Megabus,
+  Peter Pan, VIA Rail, and Deutsche Bahn. Its routing technology stitches together multi-operator
+  bus-and-train itineraries, and bookings are completed in-platform with carriers paying a percentage of
+  each fare. Wanderu operates a private booking/search API and publishes no public developer program,
+  SDKs, or OpenAPI; its public open-source presence is internal engineering tooling on GitHub (the
+  redis-backed "bamboo" queuing system). Backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/wanderu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Transportation
+- Bus
+- Train
+- Booking
+- Metasearch
+- Ticketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wanderu-domain-security.yml
 - type: Website
   url: https://wanderu.com
+- type: Blog
+  url: https://www.wanderu.com/blog/
+- type: Support
+  url: https://help.wanderu.com/
+- type: TermsOfService
+  url: https://www.wanderu.com/en-us/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.wanderu.com/en-us/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/wanderu
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
